@@ -1,1 +1,56 @@
+/* Skip to main content link styling */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: white;
+    color: black;
+    opacity: 0;
+}
 
+.skip-link:focus {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+/* Navigation styling */
+nav {
+    display: inline-block;
+    width: 80%;
+}
+
+/* Style for list items in navigation - commented out previous styling */
+/*
+nav li {
+    display: inline;
+    padding: 0 20px;
+}
+*/
+
+/* Style for header image */
+header > img {
+    width: 10%;
+}
+
+/* Grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+/* Images within grid */
+.grid img {
+    width: 100%;
+}
+
+/* Flex layout */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
